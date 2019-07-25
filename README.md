@@ -23,7 +23,7 @@ python3 ./bin/bna show-url
 
 输出的`otpauth://totp/Blizzard:CNXXXXXXXXXXXX?secret=XXXXXXXXXXXXXXXXXX&issuer=Blizzard&digits=8` 就是TOPT URL
 
-接着就可以导入第三方OPT软件 1password, Authy等（*注：Google Authenticator不可用，因为战网的是8为数字)
+接着就可以导入第三方OPT软件 1password, Authy等（*注：Google Authenticator不可用，因为战网的是8位数字)
 
 可以找个生成二维码的网站把URL生成二维码方便导入。
 
