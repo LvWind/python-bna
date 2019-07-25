@@ -115,13 +115,13 @@ def restore(serial: str, restore_code: str) -> str:
 
 
 def initiate_paper_restore(
-	serial: str, host: str = ENROLL_HOSTS["default"], path: str = PATHS["init_restore"]
+	serial: str, host: str = ENROLL_HOSTS["CN"], path: str = PATHS["init_restore"]
 ) -> bytes:
 	return get_server_response(serial, host, path)
 
 
 def validate_paper_restore(
-	data: str, host: str = ENROLL_HOSTS["default"], path: str = PATHS["validate_restore"]
+	data: str, host: str = ENROLL_HOSTS["CN"], path: str = PATHS["validate_restore"]
 ) -> bytes:
 	try:
 		response = get_server_response(data, host, path)

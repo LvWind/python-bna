@@ -1,3 +1,40 @@
+# 说明
+clone 到本地，安装依赖
+
+```shell
+cd python-bna
+
+pip3 install -e ./
+```
+
+启动已安装的战网安全令，右上角菜单`序列号与还原码`获得`CN`开头的序列号和10位的还原码。
+
+```shell
+python3 ./bin/bna restore CN-xxxx-xxxx-xxxx-xxxx ABCDEFGHIJ
+```
+
+如成功会显示`Restored CN-xxxx-xxxx-xxxx`
+
+运行
+
+```shell
+python3 ./bin/bna show-url
+```
+
+输出的`otpauth://totp/Blizzard:CNXXXXXXXXXXXX?secret=XXXXXXXXXXXXXXXXXX&issuer=Blizzard&digits=8` 就是TOPT URL
+
+接着就可以导入第三方OPT软件 1password, Authy等（*注：Google Authenticator不可用，因为战网的是8为数字)
+
+可以找个生成二维码的网站把URL生成二维码方便导入。
+
+
+
+
+
+
+
+
+
 # python-bna
 [![Build Status](https://api.travis-ci.org/jleclanche/python-bna.svg?branch=master)](https://travis-ci.org/jleclanche/python-bna)
 
